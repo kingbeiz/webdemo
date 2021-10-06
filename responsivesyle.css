@@ -1,0 +1,293 @@
+body {
+  margin: 0;
+  font-family: "ubuntu", sans-serif;
+}
+
+hr {
+  height: 1px;
+  background-color: #707070;
+}
+
+.footer-text {
+  text-align: center;
+}
+.first-text-footer {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #ffffff;
+  opacity: 54%;
+  font-family: "ubuntu", sans-serif;
+  margin: 0;
+}
+.second-text-footer {
+  font-size: 1.125rem;
+  font-weight: lighter;
+  color: #ffffff;
+  opacity: 54%;
+  font-family: "ubuntu", sans-serif;
+  margin: 0.75rem 0 0;
+}
+/**************
+  **Article**
+   **************/
+.featured-img {
+  width: 100%;
+  height: 199px;
+}
+
+.article-date {
+  padding-top: .5rem;
+  font-size: 0.875rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.article-h {
+  font-size: 1.5rem;
+  font-family: "lora", serif;
+  color: #143774;
+  margin-top: 0px;
+}
+br{
+  display: none;
+}
+.article-p {
+  font-weight: lighter;
+  font-size: 1.125rem;
+  color: #707070;
+  margin-top: 0;
+}
+.a-link {
+  color: #1792d2;
+}
+.article-link {
+  font-size: 0.875rem;
+  color: #1792d2;
+  font-weight: bold;
+  text-decoration: none;
+}
+.article-link:hover,
+.article-link:focus {
+  color: #143774;
+  text-decoration: underline;
+}
+.blog-article {
+  text-align: left;
+}
+.container-post {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.container-post-space {
+  margin-bottom: 2rem;
+}
+.col-image {
+  width: 100%;
+  margin-right: 1rem;
+}
+.contain-image-size {
+  width: 100%;
+  height: 242px;
+}
+
+.article-date {
+  margin-top: 0;
+}
+
+/**************
+  **sidebar**
+   **************/
+.sidebar {
+  border: 20px solid #ebebeb;
+  padding: 20px;
+  margin-bottom: 3rem;
+}
+.header-sidebar {
+  font-size: 1.125rem;
+  color: #143774;
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+.profile-pic {
+  height: 133px;
+  width: 100%;
+}
+.profile-text {
+  color: #143774;
+  font-weight: lighter;
+  font-size: 0.8rem;
+}
+.sidebar-image {
+  width: 100%;
+  height: 87px;
+}
+.sidebar-shead {
+  font-size: 1rem;
+  color: #1792d2;
+  font-family: "lora", serif;
+}
+hr {
+  margin-bottom: 2rem;
+}
+/**************
+  **Typography**
+   **************/
+h1 {
+  font-size: 2rem;
+  font-family: "lora", serif;
+  margin: 0;
+  color: #143774;
+}
+.subtitle {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+  color: #1792d2;
+}
+/**************
+  **Layout**
+   **************/
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.container-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header {
+  text-align: center;
+  padding: 3rem 0;
+  background-color: #f8f8f8;
+}
+.container-body {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+main {
+  width: 100%;
+}
+aside {
+  width: 100%;
+}
+footer {
+  padding: 3.75rem 0;
+  background-color: #143774;
+}
+
+/**************
+  **Navigation**
+   **************/
+nav ul {
+  
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+}
+nav li {
+  margin: 0.5rem 0;
+}
+nav a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #707070;
+  font-weight: bold;
+  padding: 0.25rem 0;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #1792d2;
+}
+
+.current-page {
+  border-bottom: 3px dotted #707070;
+}
+
+.current-page:hover {
+  color: #707070;
+}
+
+@media (min-width: 500px){
+  .res-date{
+    position: absolute;
+    right: 1.525rem;
+  }
+  .article-h{
+    margin-top: .5rem;
+  }
+
+}
+@media (min-width: 675px) {
+  /*********Desktop view***/
+  .container {
+    width: 90%; /**width for other screen**/
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .container-nav{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .res-date{
+    /*****repositioning the date bcus of tablet***/
+    position: relative;
+    right: 0; 
+  }
+  nav ul{
+    flex-direction: row;
+  }
+  nav li {
+    margin-left: 2rem;
+  }
+  .container-body{
+    margin-top: 4rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  main {
+    width: 70%;
+  }
+  aside {
+    width: 25%;
+  }
+  .container-post{
+    flex-direction: row;
+  }
+  .contain-image-size {
+    width: 198px;
+    min-height: 246px;
+    object-fit: cover;
+  }
+  
+}
+
+/**************
+  **About us**
+   **************/
+   .about-img{
+     width: 100%;
+   }
+  .about-h{
+    font-size: 1.5em;
+    color: #143774;
+    font-family: "lora", sans-serif;
+  }
+  .about-h2{
+    font-size: 1.3125rem;
+    color: #1792d2;
+  }
+  .about-p{
+    font-size: 1.125rem;
+    color: #707070;
+  }
+  .about-p:last-child{
+    margin-bottom: 2.75rem;
+  }
+ 
